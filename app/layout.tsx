@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,6 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
